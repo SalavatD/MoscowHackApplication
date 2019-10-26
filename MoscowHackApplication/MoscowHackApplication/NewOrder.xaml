@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoscowHackApplication.NewOrder">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <x:Array x:Key="clothes" Type="{x:Type x:String}">
+                <x:String>Jeans</x:String>
+                <x:String>Joggers</x:String>
+                <x:String>Bomber</x:String>
+                <x:String>Shirt</x:String>
+            </x:Array>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Новый заказ" HorizontalOptions="Center" FontSize="Large" />
+            <ListView x:Name="newClothesList" ItemsSource="{StaticResource Key=clothes}"
+                      ItemTapped="newClothesList_ItemTapped"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

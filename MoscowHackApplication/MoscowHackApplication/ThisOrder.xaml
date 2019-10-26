@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoscowHackApplication.ThisOrder">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="{Binding ThisСloth}" HorizontalOptions="Center" FontSize="Large" />
+            <Button Text="Отменить заказ"
+                    BackgroundColor="DarkRed"
+                    TextColor="White"
+                    CornerRadius="25"
+                    Clicked="Remove_Order_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

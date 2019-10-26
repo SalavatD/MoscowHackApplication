@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CourierApplication.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Button Text="Получить заказ"
+                BackgroundColor="DodgerBlue"
+                TextColor="White"
+                CornerRadius="25"
+                Clicked="New_Order_Clicked" />
+
+        <Button Text="Выбрать заказ"
+                BackgroundColor="DodgerBlue"
+                TextColor="White"
+                CornerRadius="25"
+                Clicked="List_Orders_Clicked" />
+
+        <Label Text="Текущий заказ" HorizontalOptions="Center" FontSize="Large" />
+        <Label Text = "Empty"
+               x:Name="currentOrderLabel" 
+               x:FieldModifier="Public" />
+    </StackLayout>
+</ContentPage>
